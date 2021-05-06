@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/mediclib/mediclib.iml" filepath="$PROJECT_DIR$/mediclib/mediclib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../mediclib_scratch/mediclib_scratch.iml" filepath="$PROJECT_DIR$/../mediclib_scratch/mediclib_scratch.iml" />
+    </modules>
+  </component>
+</project>
