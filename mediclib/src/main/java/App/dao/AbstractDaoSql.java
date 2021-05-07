@@ -54,5 +54,4 @@ public abstract class AbstractDaoSql {
     }
 
 
-    protected abstract ResultSet getResult(String s);
 }

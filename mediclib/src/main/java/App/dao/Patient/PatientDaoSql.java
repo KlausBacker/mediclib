@@ -122,8 +122,4 @@ public class PatientDaoSql extends AbstractDaoSql implements IPatientDao {
         }
     }
 
-    @Override
-    protected ResultSet getResult(String s) {
-        return null;
-    }
 }
