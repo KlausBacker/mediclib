@@ -18,7 +18,7 @@ public abstract class AbstractDaoSql {
             }
             try {
                 System.out.println("Connection established.");
-                this.connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/MedicLib?serverTimezone=UTC", "root", "ktipiti");
+                this.connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/MedicLib?serverTimezone=UTC", "root", "44Schrodinger!");
             }catch (SQLException sqle) {
                 System.out.println("Impossible to establish the connection.");
             }
@@ -52,7 +52,4 @@ public abstract class AbstractDaoSql {
             return null;
         }
     }
-
-
-    protected abstract ResultSet getResult(String s);
 }

@@ -33,9 +33,4 @@ public class MedSpecialityDaoSql extends AbstractDaoSql implements IMedSpecialit
     public boolean deleteById(int id) {
         return false;
     }
-
-    @Override
-    protected ResultSet getResult(String s) {
-        return null;
-    }
 }

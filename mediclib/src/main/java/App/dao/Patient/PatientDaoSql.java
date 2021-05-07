@@ -1,11 +1,12 @@
 package App.dao.Patient;
 
 import App.dao.AbstractDaoSql;
-import App.dao.Patient.IPatientDao;
 import App.model.Patient;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.time.LocalDate;
+import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -60,7 +61,7 @@ public class PatientDaoSql extends AbstractDaoSql implements IPatientDao {
 
         this
 //                .prepare(addQuery.toString())
-                .prepare("INSERT INTO Patient " + "(pat_id, pat_last_name, pat_first_name, "
+                .prepare("INSERT INTO Patient " + "(pat_last_name, pat_first_name, "
                         + "pat_social_sec_number, pat_birthday, pat_phone_number,"
                         + "pat_address_id) VALUES (?,?,?,?,?,?)")
                 .setParameter(entity.getLastName())
@@ -76,7 +77,29 @@ public class PatientDaoSql extends AbstractDaoSql implements IPatientDao {
 
     @Override
     public Patient update(Patient entity) {
-        return null;
+        StringBuilder updateQuery = new StringBuilder();
+
+        updateQuery
+                .append("UPDATE Patient SET Pat_last_name = ?, ")
+                .append(" Pat_first_name = ?, ")
+                .append(" pat_social_sec_number = ?, ")
+                .append(" pat_birthday = ?, ")
+                .append(" pat_phone_number = ?, ")
+                .append(" pat_address_id = ? ")
+                .append(" where pat_id = ? ");
+
+        this
+                .prepare(updateQuery.toString())
+                .setParameter(entity.getLastName())
+                .setParameter(entity.getFirstName())
+                .setParameter(entity.getNumberSecSoc())
+                .setParameter(entity.getBirthday())
+                .setParameter(entity.getTel())
+                .setParameter(entity.getAdd_id())
+                .setParameter(entity.getId())
+                .execute();
+
+        return entity;
     }
 
     @Override
@@ -91,7 +114,7 @@ public class PatientDaoSql extends AbstractDaoSql implements IPatientDao {
             String lastName = myResults.getString("pat_last_name");
             String firstName = myResults.getString("pat_first_name");
             String secNumber = myResults.getString("pat_social_sec_number");
-            Date birthdate = myResults.getDate("pat_birthday");
+            java.sql.Date birthdate = myResults.getDate("pat_birthday");
             String phoneNumber = myResults.getString("pat_phone_number");
             int address_id = myResults.getInt("pat_address_id");
             // Address pat_address = resultSet.getAddress("pat_address_id");
@@ -121,9 +144,9 @@ public class PatientDaoSql extends AbstractDaoSql implements IPatientDao {
             return null;
         }
     }
-
-    @Override
-    protected ResultSet getResult(String s) {
-        return null;
+    public LocalDate convertToLocalDate(Date dateToConvert) {
+        return dateToConvert.toInstant()
+                .atZone(ZoneId.systemDefault())
+                .toLocalDate();
     }
 }

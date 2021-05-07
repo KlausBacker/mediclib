@@ -72,9 +72,4 @@ public class DoctorDaoSql extends AbstractDaoSql implements IDoctorDao {
             return null;
         }
     }
-
-    @Override
-    protected ResultSet getResult(String s) {
-        return null;
-    }
 }
