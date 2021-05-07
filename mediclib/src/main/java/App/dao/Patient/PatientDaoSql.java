@@ -1,8 +1,9 @@
-package App.dao;
+package App.dao.Patient;
 
+import App.dao.AbstractDaoSql;
+import App.dao.Patient.IPatientDao;
 import App.model.Patient;
 
-import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -119,5 +120,10 @@ public class PatientDaoSql extends AbstractDaoSql implements IPatientDao {
             throwables.printStackTrace();
             return null;
         }
+    }
+
+    @Override
+    protected ResultSet getResult(String s) {
+        return null;
     }
 }

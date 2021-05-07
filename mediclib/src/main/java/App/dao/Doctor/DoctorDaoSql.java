@@ -14,7 +14,7 @@ public class DoctorDaoSql extends AbstractDaoSql implements IDoctorDao {
     public List<Doctor> findAll() {
         List<Doctor> doctorList = new ArrayList<>();
         try {
-            ResultSet resultSet = this.getResult("SELECT * FROM Doctor");
+            ResultSet resultSet = this.extractResults("SELECT * FROM Doctor");
             while (resultSet.next()) {
                 Doctor doctor = this.map(resultSet);
                 doctorList.add(doctor);
@@ -71,5 +71,10 @@ public class DoctorDaoSql extends AbstractDaoSql implements IDoctorDao {
             sqle.printStackTrace(); //TODO : remove..
             return null;
         }
+    }
+
+    @Override
+    protected ResultSet getResult(String s) {
+        return null;
     }
 }

@@ -3,6 +3,7 @@ package App.dao.MedSpeciality;
 import App.dao.AbstractDaoSql;
 import App.model.MedSpeciality;
 
+import java.sql.ResultSet;
 import java.util.List;
 import java.util.Optional;
 
@@ -31,5 +32,10 @@ public class MedSpecialityDaoSql extends AbstractDaoSql implements IMedSpecialit
     @Override
     public boolean deleteById(int id) {
         return false;
+    }
+
+    @Override
+    protected ResultSet getResult(String s) {
+        return null;
     }
 }
