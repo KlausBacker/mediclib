@@ -4,26 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="035d7b66-2c1c-43e0-a6e7-9ef3e751e1a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="035d7b66-2c1c-43e0-a6e7-9ef3e751e1a6" name="Default Changelist" comment="Voilà">
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_11_4.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/CustomPreparedStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/DAOFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/Doctor/DoctorDaoSql.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/Doctor/IDoctorDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/MedSpeciality/IMedSpecialityDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/MedSpeciality/MedSpecialityDaoSql.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/exception/IdMustBePositiveException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/model/MedSpeciality.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/service/DoctorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/IPatientDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/PatientDaoSql.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/model/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mediclib/mediclib.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/mediclib.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mediclib/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/AbstractDaoSql.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/AbstractDaoSql.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mediclib/src/main/java/App/java/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/java/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediclib/src/main/java/App/model/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/model/Doctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediclib/src/main/java/App/model/Doctor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediclib/src/main/java/App/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/service/PatientService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,27 +45,43 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1s4cMAixVkLsyvvEoExdxoKXT5v" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../eshop-dao" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Java\Projects\mediclib\mediclib" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="App.dao" />
+    </key>
+  </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="App.java.Application" />
       <module name="mediclib" />
@@ -78,19 +91,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -109,17 +109,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620135253016</updated>
-      <workItem from="1620304945814" duration="7799000" />
-      <workItem from="1620371083684" duration="11526000" />
+      <workItem from="1620304945814" duration="370000" />
     </task>
-    <task id="LOCAL-00001" summary="commit Nico :)">
-      <created>1620305453540</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1620305453540</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,7 +129,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="commit Nico :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit Nico :)" />
+    <MESSAGE value="Voilà" />
+    <option name="LAST_COMMIT_MESSAGE" value="Voilà" />
   </component>
 </project>

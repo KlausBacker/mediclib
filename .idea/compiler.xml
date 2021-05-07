@@ -12,8 +12,8 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="eshop-dao" target="1.8" />
-      <module name="mediclib" target="8" />
-      <module name="mediclib_scratch" target="11" />
+      <module name="mediclib" target="10" />
+      <module name="mediclib_scratch" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
