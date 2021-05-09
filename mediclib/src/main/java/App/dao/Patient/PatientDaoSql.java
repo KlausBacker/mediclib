@@ -7,12 +7,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.LocalDate;
 import java.time.ZoneId;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 public class PatientDaoSql extends AbstractDaoSql implements IPatientDao {
+    Scanner inputPatient = new Scanner(System.in);
 
     @Override
     public List<Patient> findAll() {
@@ -31,10 +29,43 @@ public class PatientDaoSql extends AbstractDaoSql implements IPatientDao {
 
         return allPatients;
     }
+    public ArrayList<Integer> findAllId() {
+        ArrayList<Integer> allIDS = new ArrayList<>();
+
+        try {
+            ResultSet myResults = this.extractResults("SELECT * FROM Patient");
+
+            while(myResults.next()) {
+                int foundID = myResults.getInt("pat_id");
+                allIDS.add(foundID);
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+
+        return allIDS;
+    }
 
     @Override
     public Optional<Patient> findById(int id) {
         try {
+            System.out.println("Please enter the ID of searched patient. ");
+            boolean hasNextInt = inputPatient.hasNextInt();
+            id = inputPatient.nextInt();
+
+
+            if(hasNextInt) {
+                ArrayList<Integer> allIds =  findAllId();
+                if (!allIds.contains(id)) {
+                    System.out.println("The patient with given ID does not exist");
+                    System.out.println("Enter a new ID: ");
+                    id = inputPatient.nextInt();
+                }
+            }
+            else {
+                System.out.println("Inavlid ID - the input is not a number. ");
+            }
+
             ResultSet myResults = this.extractResults("SELECT * FROM Patient WHERE PAT_ID= "  + id);
 
             if(myResults.next()) {
@@ -53,11 +84,29 @@ public class PatientDaoSql extends AbstractDaoSql implements IPatientDao {
 
         StringBuilder addQuery = new StringBuilder();
 
+        System.out.println("Enter the following data in order to add a new patient: ");
+        System.out.println("Warning! Address database has to be filled first! ");
+        System.out.println("Last name ");
+        String lastName = inputPatient.nextLine();
+        entity.setLastName(lastName);
+        System.out.println("First name ");
+        entity.setFirstName(inputPatient.nextLine());
+        System.out.println("Security number ");
+        entity.setNumberSecSoc(inputPatient.nextLine());
+        System.out.println("Birthdate (input format: yyyy-mm-dd)");
+        entity.setBirthday(java.sql.Date.valueOf(inputPatient.nextLine()));
+        System.out.println("Phone number ");
+        entity.setTel(inputPatient.nextLine());
+        System.out.println("Address ID ");
+        entity.setAdd_id(inputPatient.nextInt());
+
 //        addQuery
 //                .append("INSERTO INTO Patient ")
 //                .append("(pat_id, pat_last_name, pat_first_name, ")
 //                .append(" pat_social_sec_number, pat_birthday, pat_phone_number,")
 //                .append("pat_address_id) VALUES (?,?,?,?,?,?)");
+
+        System.out.println();
 
         this
 //                .prepare(addQuery.toString())
@@ -78,6 +127,51 @@ public class PatientDaoSql extends AbstractDaoSql implements IPatientDao {
     @Override
     public Patient update(Patient entity) {
         StringBuilder updateQuery = new StringBuilder();
+
+        boolean quit = false;
+        int choice = 0;
+        printInstructions();
+
+        while(!quit) {
+            System.out.println("Enter the parameter to update or press 7 to exit. ");
+            choice = inputPatient.nextInt();
+            inputPatient.nextLine();
+
+            switch(choice) {
+                case 0:
+                    findById(0);
+                    break;
+                case 1:
+                    System.out.println("Enter new last name: ");
+                    entity.setLastName(inputPatient.nextLine());
+                    break;
+                case 2:
+                    System.out.println("Enter new first name: ");
+                    entity.setFirstName(inputPatient.nextLine());
+                    break;
+                case 3:
+                    System.out.println("Enter new social security number: ");
+                    entity.setNumberSecSoc(inputPatient.nextLine());
+                    break;
+                case 4:
+                    System.out.println("Enter new birthdate (input format: yyyy-mm-dd) ");
+                    entity.setBirthday(java.sql.Date.valueOf(inputPatient.nextLine()));
+                    break;
+                case 5:
+                    System.out.println("Enter new phone number ");
+                    entity.setTel(inputPatient.nextLine());
+                    break;
+                case 6:
+                    System.out.println("Enter new address_id");
+                    entity.setAdd_id(inputPatient.nextInt());
+                    inputPatient.nextLine();
+                    break;
+                case 7:
+                    quit = true;
+                    break;
+            }
+        }
+
 
         updateQuery
                 .append("UPDATE Patient SET Pat_last_name = ?, ")
@@ -100,6 +194,17 @@ public class PatientDaoSql extends AbstractDaoSql implements IPatientDao {
                 .execute();
 
         return entity;
+    }
+    public static void printInstructions() {
+        System.out.println("\nPress");
+        System.out.println("\t 0 - To find a patient by its ID.");
+        System.out.println("\t 1 - To modify the last name.");
+        System.out.println("\t 2 - To To modify the first name.");
+        System.out.println("\t 3 - To modify the social security number");
+        System.out.println("\t 4 - To modify the birthdate");
+        System.out.println("\t 5 - To modify the phone number");
+        System.out.println("\t 6 - To modify the address ID");
+        System.out.println("\t 7 - To quit the application.");
     }
 
     @Override
