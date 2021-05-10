@@ -14,7 +14,8 @@ import java.util.Scanner;
 public class Application {
     public static void main(String[] args) {
         System.out.println("Hello world");
-        daoDoctor();
+
+        //daoDoctor();
        // daoPatient();
     }
 
@@ -48,6 +49,10 @@ public class Application {
             for (Patient p : patientList) {
                 System.out.println(p.getFirstName() + " " + p.getLastName());
             }
+        }
+
+        public static void daoMedSpeciality(){
+
         }
     }
 

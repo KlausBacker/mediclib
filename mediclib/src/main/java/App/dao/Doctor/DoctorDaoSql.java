@@ -70,7 +70,7 @@ public class DoctorDaoSql extends AbstractDaoSql implements IDoctorDao {
             int sector = resultSet.getInt("doc_sector");
            // String speciality = resultSet.getString("Medspe_name");
 
-            //Instancier un produit, une catégorie, un fournisseur
+            //Instancier un docteur
             Doctor doctor = new Doctor();
           //  MedSpeciality medSpeciality = new MedSpeciality();
 

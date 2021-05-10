@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="035d7b66-2c1c-43e0-a6e7-9ef3e751e1a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/Patient/StringtoSQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/service/MedSpecialityService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediclib/mediclib.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/mediclib.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediclib/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/DAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/DAOFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/Doctor/DoctorDaoSql.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/Doctor/DoctorDaoSql.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/MedSpeciality/MedSpecialityDaoSql.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/MedSpeciality/MedSpecialityDaoSql.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mediclib/src/main/java/App/java/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/java/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediclib/src/main/java/App/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/service/PatientService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620389766276</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="implementation de la  methode findById() de Doctor">
+      <created>1620625630707</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1620625630707</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
