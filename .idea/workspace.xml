@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="035d7b66-2c1c-43e0-a6e7-9ef3e751e1a6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/mediclib/src/main/java/App/java/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/java/Application.java" afterDir="false" />
+    <list default="true" id="035d7b66-2c1c-43e0-a6e7-9ef3e751e1a6" name="Default Changelist" comment="merge du lundi">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/DAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/DAOFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/Patient/PatientDaoSql.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/Patient/PatientDaoSql.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620625630707</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="merge du lundi">
+      <created>1620629098348</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1620629098348</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,7 +152,8 @@
     <MESSAGE value="Voilà" />
     <MESSAGE value="implementation de la  methode findAll() de Doctor et Patient" />
     <MESSAGE value="implementation de la  methode findById() de Doctor" />
-    <option name="LAST_COMMIT_MESSAGE" value="implementation de la  methode findById() de Doctor" />
+    <MESSAGE value="merge du lundi" />
+    <option name="LAST_COMMIT_MESSAGE" value="merge du lundi" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

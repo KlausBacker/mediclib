@@ -108,7 +108,7 @@ public class PatientDaoSql extends AbstractDaoSql implements IPatientDao {
             myPatient.setLastName(lastName);
             myPatient.setFirstName(firstName);
             myPatient.setNumberSecSoc(secNumber);
-            myPatient.setBirthday(birthdate);
+            //myPatient.setBirthday(birthdate);
             myPatient.setTel(phoneNumber);
             myPatient.setAdd_id(address_id);
             //myPatient.setAdd_id(spat_address);
