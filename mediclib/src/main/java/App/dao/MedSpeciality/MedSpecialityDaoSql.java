@@ -34,8 +34,4 @@ public class MedSpecialityDaoSql extends AbstractDaoSql implements IMedSpecialit
         return false;
     }
 
-    @Override
-    protected ResultSet getResult(String s) {
-        return null;
-    }
 }

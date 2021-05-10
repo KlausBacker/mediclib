@@ -13,7 +13,7 @@ public class PatientService {
     }
 
     public Patient findById(int id) {
-        return this.myPatientDao.findById(id).orElseThrow();
+        return this.myPatientDao.findById(id).orElseThrow(null);
     }
 
     public void addPatient (Patient addedPatient) {

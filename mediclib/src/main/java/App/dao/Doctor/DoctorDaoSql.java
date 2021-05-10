@@ -29,6 +29,20 @@ public class DoctorDaoSql extends AbstractDaoSql implements IDoctorDao {
 
     @Override
     public Optional<Doctor> findById(int id) {
+
+        ResultSet resultSet = this.extractResults("SELECT * FROM Doctor WHERE doc_ID = " + id);
+
+        try {
+            if (resultSet.next()) { //Si j'ai un DOCTEUR
+
+                Doctor doc = map(resultSet);
+                return Optional.of(doc);
+            }
+        }
+
+        catch (SQLException sqle) {
+            System.out.println("Probléme création du docteur.");
+        }
         return Optional.empty();
     }
 
@@ -73,8 +87,4 @@ public class DoctorDaoSql extends AbstractDaoSql implements IDoctorDao {
         }
     }
 
-    @Override
-    protected ResultSet getResult(String s) {
-        return null;
-    }
-}
+     }
