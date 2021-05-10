@@ -1,12 +1,14 @@
 package App.service;
 
+import App.dao.DAOFactory;
+import App.dao.Patient.IPatientDao;
 import App.dao.Patient.PatientDaoSql;
 import App.model.Patient;
 
 import java.util.List;
 
 public class PatientService {
-   private PatientDaoSql myPatientDao = new PatientDaoSql();
+   private IPatientDao myPatientDao = DAOFactory.createPatientDao();
 
     public List<Patient> findAll() {
         return this.myPatientDao.findAll();
@@ -19,6 +21,10 @@ public class PatientService {
     public void addPatient (Patient addedPatient) {
 
         this.myPatientDao.add(addedPatient);
+    }
+    public void updatePatient (Patient updatedPatient) {
+
+        this.myPatientDao.update(updatedPatient);
     }
 
 }

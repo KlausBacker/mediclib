@@ -1,13 +1,11 @@
 package App.model;
 
-import java.util.Date;
-
 public class Patient {
    private int id;
    private String firstName;
    private String lastName;
     private String numberSecSoc;
-    private Date birthday;
+    private java.sql.Date birthday;
     private String tel;
     private int add_id;
     // a remplacer plus tard par private Address address;
@@ -44,11 +42,11 @@ public class Patient {
         this.numberSecSoc = numberSecSoc;
     }
 
-    public Date getBirthday() {
+    public java.sql.Date getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(Date birthday) {
+    public void setBirthday(java.sql.Date birthday) {
         this.birthday = birthday;
     }
 
