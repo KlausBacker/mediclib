@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="035d7b66-2c1c-43e0-a6e7-9ef3e751e1a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/AbstractDaoHibernate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediclib/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/DAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/DAOFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediclib/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +50,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -146,7 +147,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620742012042</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="ajout AbstractDaoHibernate">
+      <created>1620742356096</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1620742356096</updated>
+    </task>
+    <task id="LOCAL-00007" summary="ajout AbstractDaoHibernate">
+      <created>1620742377899</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1620742377899</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,7 +185,8 @@
     <MESSAGE value="implementation de la  methode findById() de Doctor" />
     <MESSAGE value="merge du lundi" />
     <MESSAGE value="merge dev" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge dev" />
+    <MESSAGE value="ajout AbstractDaoHibernate" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout AbstractDaoHibernate" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

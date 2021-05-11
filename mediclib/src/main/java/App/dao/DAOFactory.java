@@ -11,9 +11,12 @@ public class DAOFactory {
     public static IDoctorDao createDoctorDao() {
         return new DoctorDaoSql();
     }
+
     public static IMedSpecialityDao createMedSpecialitydao() {
         return new MedSpecialityDaoSql();
     }
 
-    public static IPatientDao createPatientDao() { return new PatientDaoSql();    }
+    public static IPatientDao createPatientDao() {
+        return new PatientDaoSql();
+    }
 }
