@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="035d7b66-2c1c-43e0-a6e7-9ef3e751e1a6" name="Default Changelist" comment="merge du lundi">
+    <list default="true" id="035d7b66-2c1c-43e0-a6e7-9ef3e751e1a6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/mediclib/src/main/resources/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/DAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/DAOFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/Patient/PatientDaoSql.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/Patient/PatientDaoSql.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediclib/mediclib.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/mediclib.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediclib/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +52,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -78,13 +79,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -108,6 +111,7 @@
       <option name="presentableId" value="Default" />
       <updated>1620135253016</updated>
       <workItem from="1620304945814" duration="370000" />
+      <workItem from="1620740898579" duration="303000" />
     </task>
     <task id="LOCAL-00001" summary="implementation de la  methode findAll() de Doctor et Patient">
       <created>1620389766276</created>
@@ -130,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620629098348</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="merge du lundi">
+      <created>1620629185612</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1620629185612</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
