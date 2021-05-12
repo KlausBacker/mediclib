@@ -24,4 +24,18 @@ public class DoctorService {
         return this.dao.findById(id).orElseThrow(null);
     }
 
+    public void add(Doctor doctor) {
+        //Eventuellement ajouter des vérifications / validations ici
+
+        //On demande à la DAO de sauvegarder (ajout)
+        this.dao.add(doctor);
+    }
+
+    public void update(Doctor doctor) {
+        //Eventuellement vérifier si le produit n'est pas null, que l'identifiant existe bien, etc.
+
+        //On demande à la DAO de sauvegarder
+        this.dao.update(doctor);
+    }
+
 }

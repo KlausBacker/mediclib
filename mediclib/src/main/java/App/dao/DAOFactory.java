@@ -1,5 +1,6 @@
 package App.dao;
 
+import App.dao.Doctor.DoctorDaoHibernate;
 import App.dao.Doctor.DoctorDaoSql;
 import App.dao.Doctor.IDoctorDao;
 import App.dao.MedSpeciality.IMedSpecialityDao;
@@ -9,7 +10,7 @@ import App.dao.Patient.PatientDaoSql;
 
 public class DAOFactory {
     public static IDoctorDao createDoctorDao() {
-        return new DoctorDaoSql();
+        return new DoctorDaoHibernate();
     }
 
     public static IMedSpecialityDao createMedSpecialitydao() {

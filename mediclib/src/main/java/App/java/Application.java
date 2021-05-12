@@ -7,6 +7,7 @@ import App.model.Patient;
 import App.service.DoctorService;
 import App.service.PatientService;
 
+import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import java.util.List;
@@ -18,7 +19,15 @@ public class Application {
         System.out.println("Hello world");
 
         EntityManagerFactory emf =  Persistence.createEntityManagerFactory("MedicLibUnit");
-       // daoDoctor();
+        EntityManager em = emf.createEntityManager();
+        List<Doctor> doctorList = em
+                .createQuery("select d from Doctor d", Doctor.class)
+                .getResultList();
+
+        for (Doctor d : doctorList) {
+            System.out.println(d.getFirstName()+" "+ d.getLastName());
+        }
+      // daoDoctor();
        // daoPatient();
     }
 
