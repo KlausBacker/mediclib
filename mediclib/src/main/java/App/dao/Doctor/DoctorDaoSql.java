@@ -75,9 +75,9 @@ public class DoctorDaoSql extends AbstractDaoSql implements IDoctorDao {
           //  MedSpeciality medSpeciality = new MedSpeciality();
 
             //Affecter ses informations
-            doctor.setId(id);
-            doctor.setFirstName(firstName);
-            doctor.setLastName(lastName);
+         //   doctor.setId(id);
+         //   doctor.setFirstName(firstName);
+        //    doctor.setLastName(lastName);
             //doctor.setSpeciality(speciality);
             //On retourne le Docteur
             return doctor;

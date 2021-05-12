@@ -7,6 +7,8 @@ import App.model.Patient;
 import App.service.DoctorService;
 import App.service.PatientService;
 
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
@@ -15,7 +17,8 @@ public class Application {
     public static void main(String[] args) {
         System.out.println("Hello world");
 
-        daoDoctor();
+        EntityManagerFactory emf =  Persistence.createEntityManagerFactory("MedicLibUnit");
+       // daoDoctor();
        // daoPatient();
     }
 
