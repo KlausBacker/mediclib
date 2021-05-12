@@ -42,8 +42,6 @@
             <artifactId>hibernate-jpa-2.1-api</artifactId>
             <version>1.0.2.Final</version>
         </dependency>
-
-
         <dependency>
             <groupId>jakarta.validation</groupId>
             <artifactId>jakarta.validation-api</artifactId>
@@ -56,8 +54,6 @@
             <version>1.18.12</version>
         </dependency>
 
-
     </dependencies>
-
 
 </project>
