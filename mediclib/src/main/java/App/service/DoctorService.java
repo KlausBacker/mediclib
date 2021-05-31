@@ -4,6 +4,7 @@ import App.dao.DAOFactory;
 import App.dao.Doctor.IDoctorDao;
 import App.exception.IdMustBePositiveException;
 import App.model.Doctor;
+import App.model.MedSpeciality;
 
 import java.util.List;
 
@@ -32,10 +33,15 @@ public class DoctorService {
     }
 
     public void update(Doctor doctor) {
-        //Eventuellement vérifier si le produit n'est pas null, que l'identifiant existe bien, etc.
 
-        //On demande à la DAO de sauvegarder
         this.dao.update(doctor);
+    }
+
+    public void delete(int id) {
+        if (id <= 0) {
+            throw new IdMustBePositiveException();
+        }
+        this.dao.deleteById(id);
     }
 
 }

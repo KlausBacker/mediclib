@@ -21,6 +21,9 @@ public class Doctor {
     @NotBlank
     private String lastName;
 
+    @Column(name = "doc_sector", length = 11, nullable = false)
+    @NotBlank
+    private int sector;
 
     @ManyToMany
     @JoinTable(
@@ -54,6 +57,14 @@ public class Doctor {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public int getSector() {
+        return sector;
+    }
+
+    public void setSector(int sector) {
+        this.sector = sector;
     }
 
     public List<MedSpeciality> getSpecialityList() {
