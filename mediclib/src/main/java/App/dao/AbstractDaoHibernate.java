@@ -79,7 +79,7 @@ public abstract class AbstractDaoHibernate<T> {
     }
 
     public boolean deleteById(int id) {
-        //Démarrage de la transaction
+        //D�marrage de la transaction
         this.em.getTransaction().begin();
 
         try {

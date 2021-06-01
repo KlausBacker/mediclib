@@ -10,7 +10,10 @@
         <class>App.model.MedSpeciality</class>
         <class>App.model.Patient</class>
         <class>App.model.Address</class>
-
+        <class>App.model.Appointment</class>
+        <class>App.model.Clinic</class>
+        <class>App.model.MedCondition</class>
+        <class>App.model.PatMedCondition</class>
 
 
 

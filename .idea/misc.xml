@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/../mediclib_scratch" />
     <file type="web" url="file://$PROJECT_DIR$/mediclib" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/mediclib/pom.xml" />
-        <option value="$PROJECT_DIR$/../mediclib_scratch/pom.xml" />
       </list>
     </option>
   </component>
