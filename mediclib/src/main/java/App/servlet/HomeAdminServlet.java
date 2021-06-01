@@ -1,4 +1,4 @@
-package servlet;
+package App.servlet;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -13,7 +13,6 @@ public class HomeAdminServlet extends HttpServlet {
                 .getServletContext() // -> récupérer le contexte de Servlet
                 .getRequestDispatcher("/WEB-INF/Admin-view/home-admin.jsp") // -> récupérer le dispacher
                 .forward(request, response); // -> transfert de la requète et réponse HTTP
-
     }
 
     @Override

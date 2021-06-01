@@ -26,7 +26,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="/medspe">Specialite</a>
+                <a class="nav-link" href="medspe">Specialite</a>
             </li>
 
             <li class="nav-item">

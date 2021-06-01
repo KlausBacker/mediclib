@@ -1,4 +1,4 @@
-package servlet;
+package App.servlet;
 
 import App.service.AdressService;
 
