@@ -34,7 +34,7 @@
                     <td>${ speciality.getId() }</td>
                     <td>${ speciality.name }</td>
                     <td>
-                        <a href="detail-medspe?id=${ speciality.id }" class="btn btn-info">Détails</a>
+                        <a href="detail-medspe?id=${ speciality.id }" class="btn btn-info">Details</a>
                         <a href="update-medspe?id=${ speciality.id }" class="btn btn-warning">Modifier</a>
                         <a href="delete-medspe?id=${ speciality.id }" class="btn btn-danger">Supprimer</a>
                     </td>

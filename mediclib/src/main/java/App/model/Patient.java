@@ -39,9 +39,6 @@ public class Patient {
     @Size(max = 50)
     private String tel;
 
-    @Column(name = "pat_address_id")
-    private int ad_Id;
-//    // a remplacer plus tard par private Address address;
 
     @ManyToOne
     @JoinColumn(name = "pat_address_id")
@@ -98,14 +95,6 @@ public class Patient {
 
     public void setTel(String tel) {
         this.tel = tel;
-    }
-
-    public int getAd_Id() {
-        return ad_Id;
-    }
-
-    public void setAd_Id(int ad_Id) {
-        this.ad_Id = ad_Id;
     }
 
     public Address getPatAddress() {

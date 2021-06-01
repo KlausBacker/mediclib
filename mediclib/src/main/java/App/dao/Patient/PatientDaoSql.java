@@ -2,6 +2,7 @@ package App.dao.Patient;
 
 import App.dao.AbstractDaoSql;
 import App.dao.Patient.IPatientDao;
+import App.model.Address;
 import App.model.Patient;
 
 import java.sql.ResultSet;
@@ -68,7 +69,6 @@ public class PatientDaoSql extends AbstractDaoSql implements IPatientDao {
                 .setParameter(entity.getNumberSecSoc())
                 .setParameter(entity.getBirthday())
                 .setParameter(entity.getTel())
-                .setParameter(entity.getAd_Id())
                 .execute();
 
         return entity;
@@ -102,7 +102,7 @@ public class PatientDaoSql extends AbstractDaoSql implements IPatientDao {
 
             //Creation of new Patient
             Patient myPatient = new Patient();
-
+            Address myAddress = new Address();
             //Attribution of patient data
             myPatient.setId(id);
             myPatient.setLastName(lastName);
@@ -110,8 +110,8 @@ public class PatientDaoSql extends AbstractDaoSql implements IPatientDao {
             myPatient.setNumberSecSoc(secNumber);
             //myPatient.setBirthday(birthdate);
             myPatient.setTel(phoneNumber);
-            myPatient.setAd_Id(address_id);
-            //myPatient.setAdd_id(spat_address);
+            myAddress.setId(address_id);
+        //myPatient.setAdd_id(spat_address);
 
             return myPatient;
 

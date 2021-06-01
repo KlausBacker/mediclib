@@ -10,10 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="035d7b66-2c1c-43e0-a6e7-9ef3e751e1a6" name="Default Changelist" comment="ajout servlet &amp; views&quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediclib/src/main/webapp/WEB-INF/tags/AdminLayout.tag" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/src/main/webapp/WEB-INF/tags/AdminLayout.tag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediclib/src/main/webapp/WEB-INF/tags/layout.tag" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/src/main/webapp/WEB-INF/tags/layout.tag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/Patient/PatientDaoHibernate.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/Patient/PatientDaoHibernate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/Patient/PatientDaoSql.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/Patient/PatientDaoSql.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediclib/src/main/java/App/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/model/Patient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +138,7 @@
       </method>
     </configuration>
     <configuration name="Tomcat 9.0.46" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.46" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/mediclib_war_exploded/" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/mediclib_war_exploded/admin" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="mediclib:war exploded">
@@ -334,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622558996271</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="ajout servlet &amp; views&quot;">
+      <created>1622559365942</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1622559365942</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
