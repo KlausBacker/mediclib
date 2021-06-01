@@ -5,37 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="035d7b66-2c1c-43e0-a6e7-9ef3e751e1a6" name="Default Changelist" comment="projet war">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/mediclib__1__war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/mediclib__1__war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/mediclib_scratch_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/mediclib_scratch_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/Appointment/AppointmentDaoHibernate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/Appointment/IAppointmentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/Clinic/ClinicDaoHibernate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/Clinic/IClinicDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/MedicalCondition/IMedConditionDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/MedicalCondition/MedConditionDaoHibernate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/Patient/PatientDaoHibernate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/PatientMedicalCondition/IPatMedCondition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/PatientMedicalCondition/PatMedConDaoHibernate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/model/Appointment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/model/Clinic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/model/MedCondition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/model/PatMedCondID.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/model/PatMedCondition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/service/AppointmentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/service/ClinicService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/service/MedConditionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/service/PatMedCondService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/AbstractDaoHibernate.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/AbstractDaoHibernate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/DAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/dao/DAOFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediclib/src/main/java/App/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/model/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediclib/src/main/java/App/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/service/PatientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediclib/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
