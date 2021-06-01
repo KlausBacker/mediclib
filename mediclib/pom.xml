@@ -3,6 +3,7 @@
     <groupId>fr.groupE</groupId>
     <artifactId>mediclib</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+
     <name>MedicLib</name>
 
     <properties>

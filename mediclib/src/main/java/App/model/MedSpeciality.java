@@ -13,7 +13,7 @@ public class MedSpeciality {
     @Column(name = "Medspe_id")
     private int id;
 
-    @Column(name = "doc_last_name", length = 100, nullable = false)
+    @Column(name = "Medspe_name", length = 100, nullable = false)
     @NotBlank
     private String name;
 

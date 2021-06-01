@@ -15,7 +15,7 @@ public abstract class AbstractDaoHibernate<T> {
         this.clz = clz;
 
         if (emf == null) {
-            emf = Persistence.createEntityManagerFactory("EShopUnit");
+            emf = Persistence.createEntityManagerFactory("MedicLibUnit");
         }
 
         this.em = emf.createEntityManager();
@@ -79,7 +79,7 @@ public abstract class AbstractDaoHibernate<T> {
     }
 
     public boolean deleteById(int id) {
-        //D�marrage de la transaction
+        //Démarrage de la transaction
         this.em.getTransaction().begin();
 
         try {

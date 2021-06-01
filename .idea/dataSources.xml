@@ -8,5 +8,16 @@
       <jdbc-url>jdbc:mariadb://localhost:3306/MedicLib</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="MedicLibUnit/Hibernate" uuid="313a2669-dd4c-4d9c-8adb-bce7a83b7593">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Hibernate
+
+/Users/nicolasboulanger/Documents/WWW/MedicLib_App/mediclib/src/main/resources/META-INF/persistence.xml</remarks>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/mediclib?serverTimezone=UTC</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
