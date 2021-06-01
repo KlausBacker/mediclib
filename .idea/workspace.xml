@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="035d7b66-2c1c-43e0-a6e7-9ef3e751e1a6" name="Default Changelist" comment="projet war">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="035d7b66-2c1c-43e0-a6e7-9ef3e751e1a6" name="Default Changelist" comment="ajout folder &quot;listener, servlet, filter, tags&quot;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -191,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620808467838</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="ajout folder &quot;listener, servlet, filter, tags&quot;">
+      <created>1622537880685</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1622537880685</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,7 +224,8 @@
     <MESSAGE value="ajout AbstractDaoHibernate" />
     <MESSAGE value="implmentation models Adress, Doctor, Med_speciality," />
     <MESSAGE value="projet war" />
-    <option name="LAST_COMMIT_MESSAGE" value="projet war" />
+    <MESSAGE value="ajout folder &quot;listener, servlet, filter, tags&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout folder &quot;listener, servlet, filter, tags&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
