@@ -20,9 +20,9 @@ public class Application {
     public static void main(String[] args) {
         System.out.println("Hello world");
 
-        daoMedSpeciality();
+       // daoMedSpeciality();
         //daoDoctor();
-        // daoPatient();
+         daoPatient();
     }
 
     public static void daoDoctor() {

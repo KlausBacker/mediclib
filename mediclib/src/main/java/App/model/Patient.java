@@ -12,7 +12,7 @@ public class Patient {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
-    @Column(name= "pat_ID")
+    @Column(name = "pat_ID")
     private int id;
 
     @Column(name = "pat_first_name", length = 100, nullable = false)
@@ -36,11 +36,11 @@ public class Patient {
 
     @Column(name = "pat_phone_number", length = 50, nullable = false)
     @NotBlank
-    @Size(max=50)
+    @Size(max = 50)
     private String tel;
 
-//    @Column(name = "pat_address_id")
-//    private int ad_Id;
+    @Column(name = "pat_address_id")
+    private int ad_Id;
 //    // a remplacer plus tard par private Address address;
 
     @ManyToOne
@@ -50,6 +50,7 @@ public class Patient {
 
     @OneToMany(mappedBy = "id.patient")
     private List<PatMedCondition> sickPatients;
+
 
     public int getId() {
         return id;
@@ -99,13 +100,13 @@ public class Patient {
         this.tel = tel;
     }
 
-//    public int getAd_Id() {
-//        return ad_Id;
-//    }
-//
-//    public void setAd_Id(int ad_Id) {
-//        this.ad_Id = ad_Id;
-//    }
+    public int getAd_Id() {
+        return ad_Id;
+    }
+
+    public void setAd_Id(int ad_Id) {
+        this.ad_Id = ad_Id;
+    }
 
     public Address getPatAddress() {
         return patAddress;
@@ -122,4 +123,6 @@ public class Patient {
     public void setSickPatients(List<PatMedCondition> sickPatients) {
         this.sickPatients = sickPatients;
     }
+
+
 }

@@ -2,7 +2,6 @@ package App.dao.Patient;
 
 import App.dao.AbstractDaoSql;
 import App.dao.Patient.IPatientDao;
-import App.model.Address;
 import App.model.Patient;
 
 import java.sql.ResultSet;
@@ -69,7 +68,7 @@ public class PatientDaoSql extends AbstractDaoSql implements IPatientDao {
                 .setParameter(entity.getNumberSecSoc())
                 .setParameter(entity.getBirthday())
                 .setParameter(entity.getTel())
-                .setParameter(entity.getPatAddress())
+                .setParameter(entity.getAd_Id())
                 .execute();
 
         return entity;
@@ -95,7 +94,7 @@ public class PatientDaoSql extends AbstractDaoSql implements IPatientDao {
             Date birthdate = myResults.getDate("pat_birthday");
             String phoneNumber = myResults.getString("pat_phone_number");
             int address_id = myResults.getInt("pat_address_id");
-//             Address pat_address = myResults.getPatAddress("pat_address_id");
+            // Address pat_address = resultSet.getAddress("pat_address_id");
 
 //            String numberSecSoc = resultSet.getString("pat_social_sec_number");
 //            Date birthday = resultSet.getDate("pat_birthday");
@@ -103,16 +102,15 @@ public class PatientDaoSql extends AbstractDaoSql implements IPatientDao {
 
             //Creation of new Patient
             Patient myPatient = new Patient();
-            Address myAddress = new Address();
 
             //Attribution of patient data
             myPatient.setId(id);
             myPatient.setLastName(lastName);
             myPatient.setFirstName(firstName);
             myPatient.setNumberSecSoc(secNumber);
-            myPatient.setBirthday((java.sql.Date) birthdate);
+            //myPatient.setBirthday(birthdate);
             myPatient.setTel(phoneNumber);
-            myAddress.setId(address_id);
+            myPatient.setAd_Id(address_id);
             //myPatient.setAdd_id(spat_address);
 
             return myPatient;

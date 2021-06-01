@@ -10,4 +10,5 @@ public class ClinicDaoHibernate extends AbstractDaoHibernate<Clinic> implements 
         super(Clinic.class);
     }
 
+
 }
