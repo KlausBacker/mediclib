@@ -10,18 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="035d7b66-2c1c-43e0-a6e7-9ef3e751e1a6" name="Default Changelist" comment="ajout servlet &amp; views&quot;">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/mediclib__1__war.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/mediclib__1__war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediclib/mediclib.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/mediclib.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediclib/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediclib/src/main/java/servlet/AddPatientServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/servlet/AddPatientServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediclib/src/main/java/servlet/HomeAdminServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/servlet/HomeAdminServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediclib/src/main/java/servlet/ListPatientServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/servlet/ListPatientServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediclib/src/main/java/servlet/MedSpecialityServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/src/main/java/App/servlet/MedSpecialityServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mediclib/src/main/webapp/WEB-INF/tags/AdminLayout.tag" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/src/main/webapp/WEB-INF/tags/AdminLayout.tag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediclib/src/main/webapp/WEB-INF/tags/layout.tag" beforeDir="false" afterPath="$PROJECT_DIR$/mediclib/src/main/webapp/WEB-INF/tags/layout.tag" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -335,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622554272758</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="ajout servlet &amp; views&quot;">
+      <created>1622558996271</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1622558996271</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

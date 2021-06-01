@@ -6,7 +6,7 @@
     <title><jsp:invoke fragment="title" /></title>
 
     <meta charset="UTF-8" />
-    <base href="/mediclib/" />
+    <base href="/mediclib_war_exploded/" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
@@ -22,7 +22,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="liste-medecin">Medecin</a>
+                <a class="nav-link" href="doctor">Medecin</a>
             </li>
 
             <li class="nav-item">
@@ -30,7 +30,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="liste-pathologie">Pathologies</a>
+                <a class="nav-link" href="medcon">Pathologies</a>
             </li>
         </ul>
     </div>

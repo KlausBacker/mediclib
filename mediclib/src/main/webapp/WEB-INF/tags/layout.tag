@@ -30,7 +30,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="liste-categories">Liste des catégories</a>
+                    <a class="nav-link" href="liste-categories">Liste des catï¿½gories</a>
                 </li>
             </ul>
         </div>
