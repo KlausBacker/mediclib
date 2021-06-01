@@ -1,5 +1,7 @@
 package App.dao;
 
+import App.dao.Address.AddressDaoHibernate;
+import App.dao.Address.IAddressDAO;
 import App.dao.Appointment.AppointmentDaoHibernate;
 import App.dao.Appointment.IAppointmentDao;
 import App.dao.Clinic.ClinicDaoHibernate;
@@ -43,5 +45,6 @@ public class DAOFactory {
     public static IPatMedCondition createPatMedConditionDao() {
         return new PatMedConDaoHibernate();
     }
+    public static IAddressDAO createAddressDAO() { return new AddressDaoHibernate(); }
 
 }

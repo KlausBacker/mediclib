@@ -12,12 +12,8 @@ public class PatientDaoHibernate extends AbstractDaoHibernate<Patient> implement
     }
     Scanner inputPatient = new Scanner(System.in);
 
-    @Override
-    public Optional<Patient> findById() {
-        return Optional.empty();
-    }
 
-    @Override
+   /* @Override
     public Patient add(Patient entity) {
 
         boolean everythingFine = false;
@@ -42,5 +38,5 @@ public class PatientDaoHibernate extends AbstractDaoHibernate<Patient> implement
         }
 //        add(entity);
         return super.add(entity);
-    }
+    }*/
 }

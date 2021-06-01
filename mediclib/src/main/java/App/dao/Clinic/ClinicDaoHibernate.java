@@ -10,8 +10,4 @@ public class ClinicDaoHibernate extends AbstractDaoHibernate<Clinic> implements 
         super(Clinic.class);
     }
 
-    @Override
-    public Optional<Clinic> findById() {
-        return Optional.empty();
-    }
 }

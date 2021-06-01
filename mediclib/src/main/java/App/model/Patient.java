@@ -1,5 +1,6 @@
 package App.model;
 
+
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
@@ -38,11 +39,12 @@ public class Patient {
     @Size(max=50)
     private String tel;
 
-    @Column(name = "pat_address_id")
-    private int ad_Id;
-    // a remplacer plus tard par private Address address;
+//    @Column(name = "pat_address_id")
+//    private int ad_Id;
+//    // a remplacer plus tard par private Address address;
 
-    @Column(name = "pat_address_id")
+    @ManyToOne
+    @JoinColumn(name = "pat_address_id")
     private Address patAddress;
     // a remplacer plus tard par private Address address;
 
@@ -97,13 +99,13 @@ public class Patient {
         this.tel = tel;
     }
 
-    public int getAd_Id() {
-        return ad_Id;
-    }
-
-    public void setAd_Id(int ad_Id) {
-        this.ad_Id = ad_Id;
-    }
+//    public int getAd_Id() {
+//        return ad_Id;
+//    }
+//
+//    public void setAd_Id(int ad_Id) {
+//        this.ad_Id = ad_Id;
+//    }
 
     public Address getPatAddress() {
         return patAddress;

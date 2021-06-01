@@ -25,7 +25,7 @@
                       value="com.mysql.cj.jdbc.Driver" />
 
             <property name="hibernate.connection.user" value="root" />
-            <property name="hibernate.connection.password" value="ktipiti" />
+            <property name="hibernate.connection.password" value="44Schrodinger!" />
 
 
             <!-- Permet d'exécuter les requêtes DDL pour la génération de la base de données -->
