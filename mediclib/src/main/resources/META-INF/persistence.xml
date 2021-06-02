@@ -16,7 +16,6 @@
         <class>App.model.PatMedCondition</class>
 
 
-
         <properties>
             <property name="hibernate.connection.url"
                       value="jdbc:mysql://localhost:3306/mediclib?serverTimezone=UTC" />
